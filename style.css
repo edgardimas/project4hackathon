@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    outline: none;
+}
+
+*::selection{
+    background-color: #fa8072;
+    color:#f0f1f3
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    url(./image/undraw_fitness_stats_sht6.png);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(52% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+}
+nav{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+}
+
+nav .logo{
+    font-size: 0.5rem;
+    cursor: pointer;
+    max-width: 600px;
+}
+
+nav .logo img{
+    width: 100%;
+    max-width: 100px;
+}
+
+nav .links{
+    padding-left: 0;
+}
+
+nav .links li{
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+nav .links li a{
+    color: #263238;
+}
+
+.links .active{
+    color: #fa8072;
+}
+
+nav .links li a:hover{
+    color: #fa8072;
+}
+
+header .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header .content h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: #263238;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #fa8072;
+    color: #fa8072;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+
+.btn:hover{
+    background-color: #fa8072;
+    color: #ffff;
+}
+
+nav .open,.close{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fa8072;
+    display: none;
+}
+
+@media(max-width:850px){
+    nav .links{
+        height: 25rem;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 1.2rem;
+        background-color: #ffff;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 9999;
+    }
+    nav .links li{
+        font-size: 1.8rem;
+        margin: 0.5rem
+    }
+    nav .links li a{
+        color: #000;
+    }
+    nav .open,nav .links .close{
+        display: block;
+        position: absolute;
+        top: 1.8rem;
+        right: 1.8rem;
+    }
+    header .content h1{
+        font-size: 6rem;
+    }
+}
+
+.register{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(./image/undraw_Private_data_re_4eab.png);
+    min-height: 100hv;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.register h1{
+    font-size: 3rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #263238;
+    border-bottom: 0.3rem solid #263238;
+    margin-bottom: 0.3rem;
+}
+
+.register form{
+    padding: 2% 6%;
+    margin: 0 auto;
+}
+
+.register form .inputbox{
+    display: flexbox;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.register form .inputlabel{
+    color: #fff;
+}
+
+.register form .inputbox input{
+    height: 3rem;
+    width: 49%;
+    background-color: transparent;
+    color: #ddd;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    border: 2px solid #ddd;
+}
+@media (max-width:1100px){
+    .register form .inputbox input{
+        width: 100%;
+    }
+}
+
+footer{
+    color: #ffff;
+    padding: 2rem;
+    text-align: center;
+    background-color: #333;
+    font-size: 1.8rem;
+}
+
+.about .row{
+    min-height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+}
+
+.about.row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about .row .content h1{
+    font-size: 2rem;
+    color: #fa8072;
+    margin-bottom: 5rem;
+}
+
+.about .row .content p{
+    line-height: 1.2;
+    object-fit: cover;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}

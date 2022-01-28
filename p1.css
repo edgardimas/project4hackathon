@@ -1,0 +1,24 @@
+.jumbotron {
+    padding-top: 8rem;
+  }
+  
+  .jumbotron {
+    background-image: url(3.jpg);
+    background-size: cover;
+    height: 600px;
+  }
+  
+  /* body {
+    background-color: #ccb9b1;
+    width: 100%;
+  } */
+  
+  .footer {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+  }
+  
+  #rekomendasi :hover {
+    color: brown;
+  }
